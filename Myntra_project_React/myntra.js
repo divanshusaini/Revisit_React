@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//header
-// body
+
+
 function Card(props) {
   return (
-    <div style={{ border: "2px solid black", padding: "2px" }}>
+    <div className="card" style={{ border: "2px solid black", padding: "2px" }}>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNl0WX4Xn65RBm-GT48YBIvfBjOFAGoWP9g&s"
         height="200px"
@@ -20,7 +20,38 @@ function Card(props) {
     </div>
   );
 }
-// Footer
+
+function Header() {
+  return (
+    <div className="heading">
+      <img className="images" src="https://livewire.thewire.in/wp-content/uploads/2021/02/myntra.png" alt="" width="100px" />
+
+      <div className="option">
+        <button className="but">Men</button>
+        <button className="but">Women</button>
+        <button className="but">Kids</button>
+        <button className="but">Home & Living</button>
+        <button className="but">Beauty</button>
+        <button className="but">Studio</button>
+      </div>
+
+      <input className="searchbar" type="text" placeholder="Search for products brands and more" />
+      <div className="Profile">
+        <button className="pro">Profiles</button>
+        <button className="pro">Wishlist</button>
+        <button className="pro">Bag</button>
+      </div>
+    </div>
+  );
+}
+
+function Footer(){
+  return(
+    <div  className="img2">
+<img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2026/MARCH/31/V5J9sXaN_fc170bb71d4e405b90410922a98b34a1.jpg" width="1500px" alt="" />
+</div>
+  )
+}
 
 const arr = [
   { cloth: "T-Shirts", offer: "20-80%off" },
@@ -41,28 +72,27 @@ const arr = [
   { cloth: "Casuals", offer: "20-50%off" },
   { cloth: "Shorts", offer: "20-50%off" },
 ];
+
 function App() {
   return (
-    //header
-    // bodyKurta
-    <div
-      style={{
-        display: "flex",
-        gap: "20px",
-        flexWrap: "wrap",
-        justifyContent: "center",
-      }}
-    >
-        {
-            arr.map((value,index)=>{
-                <Card key={index} cloth={value.cloth} offer={value.offer}/>
-            })
-        }
-   
-     
-    
-    </div>
-    // Footer
+    <>
+      
+      <Header />
+  
+      <div className="middle"
+        style={{
+          display: "flex",
+          gap: "20px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {arr.map((value, index) => (
+          <Card key={index} cloth={value.cloth} offer={value.offer} />
+        ))}
+      </div>
+        <Footer/>
+    </>
   );
 }
 
