@@ -768,10 +768,17 @@ function Card(props) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Shop Now"
+                        children: `${props.price} Rs`
                     }, void 0, false, {
                         fileName: "myntra.js",
                         lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Shop Now"
+                    }, void 0, false, {
+                        fileName: "myntra.js",
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this)
                 ]
@@ -799,7 +806,7 @@ function Header() {
                 width: "100px"
             }, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 27,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -810,7 +817,7 @@ function Header() {
                         children: "Men"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -818,7 +825,7 @@ function Header() {
                         children: "Women"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -826,7 +833,7 @@ function Header() {
                         children: "Kids"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -834,7 +841,7 @@ function Header() {
                         children: "Home & Living"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -842,7 +849,7 @@ function Header() {
                         children: "Beauty"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 34,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -850,13 +857,13 @@ function Header() {
                         children: "Studio"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "myntra.js",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -865,7 +872,7 @@ function Header() {
                 placeholder: "Search for products brands and more"
             }, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -876,7 +883,7 @@ function Header() {
                         children: "Profiles"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -884,7 +891,7 @@ function Header() {
                         children: "Wishlist"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -892,19 +899,19 @@ function Header() {
                         children: "Bag"
                     }, void 0, false, {
                         fileName: "myntra.js",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "myntra.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "myntra.js",
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
@@ -918,12 +925,12 @@ function Footer() {
             alt: ""
         }, void 0, false, {
             fileName: "myntra.js",
-            lineNumber: 51,
+            lineNumber: 52,
             columnNumber: 1
         }, this)
     }, void 0, false, {
         fileName: "myntra.js",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }
@@ -931,71 +938,88 @@ _c2 = Footer;
 const arr = [
     {
         cloth: "T-Shirts",
-        offer: "20-80%off"
+        offer: "20-80%off",
+        price: 200
     },
     {
         cloth: "Jeans",
-        offer: "50-80%off"
+        offer: "50-80%off",
+        price: 250
     },
     {
         cloth: "Pants",
-        offer: "30-80%off"
+        offer: "30-80%off",
+        price: 500
     },
     {
-        cloth: "T-Shirts",
-        offer: "70-80%off"
+        cloth: "Tank-Shirts",
+        offer: "70-80%off",
+        price: 250
     },
     {
         cloth: "Kurta",
-        offer: "20-30%off"
+        offer: "20-30%off",
+        price: 500
     },
     {
         cloth: "Trousers",
-        offer: "20-50%off"
+        offer: "20-50%off",
+        price: 800
     },
     {
         cloth: "Cargos",
-        offer: "50-80%off"
+        offer: "50-80%off",
+        price: 250
     },
     {
         cloth: "Tank Tshirts",
-        offer: "30-80%off"
+        offer: "30-80%off",
+        price: 800
     },
     {
         cloth: "Suits",
-        offer: "70-80%off"
+        offer: "70-80%off",
+        price: 800
     },
     {
         cloth: "Kurta",
-        offer: "20-30%off"
+        offer: "20-30%off",
+        price: 500
     },
     {
         cloth: "Pajama",
-        offer: "20-50%off"
+        offer: "20-50%off",
+        price: 250
     },
     {
         cloth: "Polo T-Shirts",
-        offer: "20-50%off"
+        offer: "20-50%off",
+        price: 800
     },
     {
         cloth: "Tank Tshirts",
-        offer: "30-80%off"
+        offer: "30-80%off",
+        price: 500
     },
     {
         cloth: "Party Wear",
-        offer: "70-80%off"
+        offer: "70-80%off",
+        price: 250
     },
     {
         cloth: "Kurti",
-        offer: "20-30%off"
+        offer: "20-30%off",
+        price: 800
     },
     {
         cloth: "Casuals",
-        offer: "20-50%off"
+        offer: "20-50%off",
+        price: 800
     },
     {
         cloth: "Shorts",
-        offer: "20-50%off"
+        offer: "20-50%off",
+        price: 500
     }
 ];
 function App() {
@@ -1003,7 +1027,7 @@ function App() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 80,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1016,20 +1040,21 @@ function App() {
                 },
                 children: arr.map((value, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
                         cloth: value.cloth,
+                        price: value.price,
                         offer: value.offer
                     }, index, false, {
                         fileName: "myntra.js",
-                        lineNumber: 91,
+                        lineNumber: 92,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 82,
+                lineNumber: 83,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 94,
+                lineNumber: 95,
                 columnNumber: 9
             }, this)
         ]
@@ -1039,7 +1064,7 @@ _c3 = App;
 const Root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 Root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "myntra.js",
-    lineNumber: 100,
+    lineNumber: 101,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

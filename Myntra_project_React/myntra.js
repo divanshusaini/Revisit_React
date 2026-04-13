@@ -15,6 +15,7 @@ function Card(props) {
       <div style={{ textAlign: "center" }}>
         <h2>{props.cloth}</h2>
         <h1>{props.offer} </h1>
+        <h2>{`${props.price} Rs`}</h2>
         <h2>Shop Now</h2>
       </div>
     </div>
@@ -54,23 +55,23 @@ function Footer(){
 }
 
 const arr = [
-  { cloth: "T-Shirts", offer: "20-80%off" },
-  { cloth: "Jeans", offer: "50-80%off" },
-  { cloth: "Pants", offer: "30-80%off" },
-  { cloth: "T-Shirts", offer: "70-80%off" },
-  { cloth: "Kurta", offer: "20-30%off" },
-  { cloth: "Trousers", offer: "20-50%off" },
-  { cloth: "Cargos", offer: "50-80%off" },
-  { cloth: "Tank Tshirts", offer: "30-80%off" },
-  { cloth: "Suits", offer: "70-80%off" },
-  { cloth: "Kurta", offer: "20-30%off" },
-  { cloth: "Pajama", offer: "20-50%off" },
-  { cloth: "Polo T-Shirts", offer: "20-50%off" },
-  { cloth: "Tank Tshirts", offer: "30-80%off" },
-  { cloth: "Party Wear", offer: "70-80%off" },
-  { cloth: "Kurti", offer: "20-30%off" },
-  { cloth: "Casuals", offer: "20-50%off" },
-  { cloth: "Shorts", offer: "20-50%off" },
+  { cloth: "T-Shirts", offer: "20-80%off",price:200},
+  { cloth: "Jeans", offer: "50-80%off",price:250 },
+  { cloth: "Pants", offer: "30-80%off",price:500 },
+  { cloth: "Tank-Shirts", offer: "70-80%off",price:250 },
+  { cloth: "Kurta", offer: "20-30%off",price:500 },
+  { cloth: "Trousers", offer: "20-50%off", price:800 },
+  { cloth: "Cargos", offer: "50-80%off" ,price:250},
+  { cloth: "Tank Tshirts", offer: "30-80%off", price:800 },
+  { cloth: "Suits", offer: "70-80%off", price:800 },
+  { cloth: "Kurta", offer: "20-30%off",price:500 },
+  { cloth: "Pajama", offer: "20-50%off",price:250 },
+  { cloth: "Polo T-Shirts", offer: "20-50%off", price:800 },
+  { cloth: "Tank Tshirts", offer: "30-80%off",price:500 },
+  { cloth: "Party Wear", offer: "70-80%off" ,price:250},
+  { cloth: "Kurti", offer: "20-30%off", price:800 },
+  { cloth: "Casuals", offer: "20-50%off", price:800 },
+  { cloth: "Shorts", offer: "20-50%off",price:500 },
 ];
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
         }}
       >
         {arr.map((value, index) => (
-          <Card key={index} cloth={value.cloth} offer={value.offer} />
+          <Card key={index} cloth={value.cloth} price={value.price} offer={value.offer} />
         ))}
       </div>
         <Footer/>
