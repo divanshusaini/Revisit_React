@@ -727,6 +727,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _s = $RefreshSig$();
 function Card(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
@@ -768,8 +769,12 @@ function Card(props) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: `${props.price} Rs`
-                    }, void 0, false, {
+                        children: [
+                            "Price:",
+                            props.price,
+                            " Rs"
+                        ]
+                    }, void 0, true, {
                         fileName: "myntra.js",
                         lineNumber: 18,
                         columnNumber: 9
@@ -801,9 +806,10 @@ function Header() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "images",
-                src: "https://livewire.thewire.in/wp-content/uploads/2021/02/myntra.png",
+                src: "https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg",
                 alt: "",
-                width: "100px"
+                width: "100px",
+                height: "45px"
             }, void 0, false, {
                 fileName: "myntra.js",
                 lineNumber: 28,
@@ -1023,12 +1029,41 @@ const arr = [
     }
 ];
 function App() {
+    _s();
+    const [A, setA] = (0, _react.useState)(arr);
+    function sort() {
+        A.sort((a, b)=>a.price - b.price);
+        setA([
+            ...A
+        ]);
+    }
+    function filter() {
+        setA(A.filter((el)=>el.price > 499));
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 81,
+                lineNumber: 95,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: sort,
+                className: "sort",
+                children: "Sort By Price"
+            }, void 0, false, {
+                fileName: "myntra.js",
+                lineNumber: 97,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: filter,
+                className: "sort1",
+                children: " Price above 499"
+            }, void 0, false, {
+                fileName: "myntra.js",
+                lineNumber: 98,
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "middle",
@@ -1038,33 +1073,34 @@ function App() {
                     flexWrap: "wrap",
                     justifyContent: "center"
                 },
-                children: arr.map((value, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
+                children: A.map((value, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
                         cloth: value.cloth,
                         price: value.price,
                         offer: value.offer
                     }, index, false, {
                         fileName: "myntra.js",
-                        lineNumber: 92,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 83,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "myntra.js",
-                lineNumber: 95,
+                lineNumber: 111,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
+_s(App, "Q15j6VveERBG8qyqFC0f4qoPdao=");
 _c3 = App;
 const Root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 Root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "myntra.js",
-    lineNumber: 101,
+    lineNumber: 117,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

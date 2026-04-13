@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { useState } from "react";
 
 
 function Card(props) {
@@ -15,7 +15,7 @@ function Card(props) {
       <div style={{ textAlign: "center" }}>
         <h2>{props.cloth}</h2>
         <h1>{props.offer} </h1>
-        <h2>{`${props.price} Rs`}</h2>
+        <h2>Price:{props.price } Rs</h2>
         <h2>Shop Now</h2>
       </div>
     </div>
@@ -25,7 +25,7 @@ function Card(props) {
 function Header() {
   return (
     <div className="heading">
-      <img className="images" src="https://livewire.thewire.in/wp-content/uploads/2021/02/myntra.png" alt="" width="100px" />
+      <img className="images" src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="" width="100px" height="45px" />
 
       <div className="option">
         <button className="but">Men</button>
@@ -74,12 +74,28 @@ const arr = [
   { cloth: "Shorts", offer: "20-50%off",price:500 },
 ];
 
+
+
 function App() {
+
+  const [A,setA]=useState(arr);
+function sort(){
+  A.sort((a,b)=>a.price-b.price);
+  setA([...A]); 
+  
+}
+function filter(){
+ setA( A.filter(el=>el.price>499));
+ 
+}
+
   return (
     <>
       
       <Header />
   
+  <button onClick={sort} className="sort">Sort By Price</button>
+  <button onClick={filter} className="sort1"> Price above 499</button>
       <div className="middle"
         style={{
           display: "flex",
@@ -88,7 +104,7 @@ function App() {
           justifyContent: "center",
         }}
       >
-        {arr.map((value, index) => (
+        {A.map((value, index) => (
           <Card key={index} cloth={value.cloth} price={value.price} offer={value.offer} />
         ))}
       </div>
