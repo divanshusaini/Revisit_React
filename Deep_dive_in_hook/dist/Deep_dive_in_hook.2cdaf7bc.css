@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#root {
+  text-align: center;
+  background-color: beige;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  width: 60px;
+  height: 40px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=Deep_dive_in_hook.2cdaf7bc.css.map */
