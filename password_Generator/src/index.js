@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import React, { use, useCallback, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 
 function PasswordGenerator() {
@@ -8,8 +8,8 @@ function PasswordGenerator() {
     const [NumberChange,setNumberChange]=useState(false); 
     const [CharChange,setCharChange]=useState(false); 
 
-    function generate(){
-      let str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const generate =useCallback(()=>{
+let str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
       if(NumberChange){
         str+="0123456789";
       }
@@ -21,7 +21,8 @@ function PasswordGenerator() {
         pass+=str[Math.floor(Math.random()*str.length)]
       }
       setPassword(pass);
-    }
+    },[Length,NumberChange,CharChange]);
+
 useEffect(generate,[Length,NumberChange,CharChange]);
     // generate();
 
