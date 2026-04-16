@@ -22,7 +22,7 @@ function PasswordGenerator() {
       }
       setPassword(pass);
     }
-useEffect(generate,[Length]);
+useEffect(generate,[Length,NumberChange,CharChange]);
     // generate();
 
   return (
