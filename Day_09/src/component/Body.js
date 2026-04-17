@@ -2,17 +2,20 @@ import { useEffect, useState } from "react";
 
 function Body() {
   const [Profile, setProfile] = useState([]);
-
-  async function generate() {
-    const response = await fetch("https://api.github.com/users?per_page=10");
+  const [User,setUser]=useState("");
+  async function generate(count) {
+    const response = await fetch(`https://api.github.com/users?per_page=${count}`);
     const data = await response.json();
     setProfile(data);
   }
 
   useEffect( () => {
-     generate();
+     generate(10);
   }, []);
   return (
+    <div className="outer">
+      <input type="text" className="input" placeholder="Search Here" value={User} onChange={(e)=>{setUser(e.target.value)}}/>
+      <button onClick={()=>(generate(Number(User)))}>Search Profile</button>
     <div className="Profiles">
       {Profile.map((value) => {
         return (
@@ -25,6 +28,7 @@ function Body() {
           </div>
         );
       })}
+    </div>
     </div>
   );
 }

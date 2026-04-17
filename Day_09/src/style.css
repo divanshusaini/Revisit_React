@@ -38,3 +38,21 @@ img{
     margin-right: 30px;
     border: 2px rgb(63, 62, 62) solid;
 }
+.outer{
+    margin-top: 20px;
+}
+.input{
+    margin-left: 40vw;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    padding-left: 1vw;
+}
+
+button{
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(34, 34, 183);
+    color: white;
+    margin-left: 1vw;
+}
