@@ -734,6 +734,14 @@ var _contact = require("./src/contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _dashboard = require("./src/dashboard");
 var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
+var _details = require("./src/Details");
+var _detailsDefault = parcelHelpers.interopDefault(_details);
+var _zero = require("./src/Zero");
+var _zeroDefault = parcelHelpers.interopDefault(_zero);
+var _hi = require("./src/Hi");
+var _hiDefault = parcelHelpers.interopDefault(_hi);
+var _hello = require("./src/Hello");
+var _helloDefault = parcelHelpers.interopDefault(_hello);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.BrowserRouter), {
         children: [
@@ -744,7 +752,7 @@ function App() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 12,
+                        lineNumber: 17,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -752,7 +760,7 @@ function App() {
                         children: "Contact"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 13,
+                        lineNumber: 18,
                         columnNumber: 18
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -760,13 +768,21 @@ function App() {
                         children: "Dashboard"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 14,
+                        lineNumber: 19,
+                        columnNumber: 19
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                        to: "/Details",
+                        children: "Details"
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 20,
                         columnNumber: 19
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "App.jsx",
-                lineNumber: 11,
+                lineNumber: 16,
                 columnNumber: 15
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
@@ -775,55 +791,105 @@ function App() {
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                             fileName: "App.jsx",
-                            lineNumber: 17,
+                            lineNumber: 24,
                             columnNumber: 42
                         }, void 0)
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 17,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: "/Contact",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                             fileName: "App.jsx",
-                            lineNumber: 18,
+                            lineNumber: 25,
                             columnNumber: 49
                         }, void 0)
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 18,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: "/Dashboard",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dashboardDefault.default), {}, void 0, false, {
                             fileName: "App.jsx",
-                            lineNumber: 19,
+                            lineNumber: 26,
                             columnNumber: 51
                         }, void 0)
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 19,
+                        lineNumber: 26,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: "/Details",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailsDefault.default), {}, void 0, false, {
+                            fileName: "App.jsx",
+                            lineNumber: 27,
+                            columnNumber: 49
+                        }, void 0),
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                                index: true,
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _zeroDefault.default), {}, void 0, false, {
+                                    fileName: "App.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 39
+                                }, void 0)
+                            }, void 0, false, {
+                                fileName: "App.jsx",
+                                lineNumber: 29,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                                path: "hello",
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helloDefault.default), {}, void 0, false, {
+                                    fileName: "App.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 46
+                                }, void 0)
+                            }, void 0, false, {
+                                fileName: "App.jsx",
+                                lineNumber: 30,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                                path: "hi",
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hiDefault.default), {}, void 0, false, {
+                                    fileName: "App.jsx",
+                                    lineNumber: 31,
+                                    columnNumber: 43
+                                }, void 0)
+                            }, void 0, false, {
+                                fileName: "App.jsx",
+                                lineNumber: 31,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "App.jsx",
+                        lineNumber: 27,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "App.jsx",
-                lineNumber: 16,
+                lineNumber: 23,
                 columnNumber: 15
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 10,
+        lineNumber: 15,
         columnNumber: 15
     }, this);
 }
 _c = App;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "App.jsx",
-    lineNumber: 26,
+    lineNumber: 40,
     columnNumber: 61
 }, undefined));
 var _c;
@@ -834,7 +900,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","react-router":"2jawN","./src/home":"lWIRK","./src/contact":"6qwXw","./src/dashboard":"19JjT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","react-router":"2jawN","./src/home":"lWIRK","./src/contact":"6qwXw","./src/dashboard":"19JjT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./src/Details":"gspAV","./src/Zero":"hqkZz","./src/Hi":"1Fg1D","./src/Hello":"pKnb4"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -29078,6 +29144,161 @@ var _c;
 $RefreshReg$(_c, "Dashboard");
 
   $parcel$ReactRefreshHelpers$3e4e.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gspAV":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a943 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a943.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a943.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Details);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouter = require("react-router");
+function Details() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                        to: "hello",
+                        children: "Hello"
+                    }, void 0, false, {
+                        fileName: "src/Details.jsx",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                        to: "Hi",
+                        children: "Hi"
+                    }, void 0, false, {
+                        fileName: "src/Details.jsx",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Details.jsx",
+                lineNumber: 5,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Welcome to Details Page"
+            }, void 0, false, {
+                fileName: "src/Details.jsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
+                fileName: "src/Details.jsx",
+                lineNumber: 11,
+                columnNumber: 9
+            }, this),
+            " "
+        ]
+    }, void 0, true);
+}
+_c = Details;
+var _c;
+$RefreshReg$(_c, "Details");
+
+  $parcel$ReactRefreshHelpers$a943.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router":"2jawN"}],"hqkZz":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$7f8c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$7f8c.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7f8c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Zero);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Zero() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Zero Page"
+    }, void 0, false, {
+        fileName: "src/Zero.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, this);
+}
+_c = Zero;
+var _c;
+$RefreshReg$(_c, "Zero");
+
+  $parcel$ReactRefreshHelpers$7f8c.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1Fg1D":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$fb32 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$fb32.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fb32.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Hi);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Hi() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Hi Page"
+    }, void 0, false, {
+        fileName: "src/Hi.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, this);
+}
+_c = Hi;
+var _c;
+$RefreshReg$(_c, "Hi");
+
+  $parcel$ReactRefreshHelpers$fb32.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"pKnb4":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$7578 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$7578.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7578.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Hello);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Hello() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: " Hello Page"
+    }, void 0, false, {
+        fileName: "src/Hello.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, this);
+}
+_c = Hello;
+var _c;
+$RefreshReg$(_c, "Hello");
+
+  $parcel$ReactRefreshHelpers$7578.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
