@@ -1,0 +1,17 @@
+import { useDispatch, useSelector } from "react-redux"
+import { Increment,Decrement,reset } from "./Slicer1";
+
+
+export default function Counting(){
+
+   const count = useSelector((state)=>state.slice1.count); //state mai saari states hongi ,stores wali
+  const dispatch= useDispatch();
+    return (
+        <>
+    <h1>Counter is {count}</h1>
+    <button onClick={()=>dispatch(Increment())}>Increment</button>
+    <button  onClick={()=>dispatch(Decrement())}>Decrement</button>
+    <button  onClick={()=>dispatch(reset())}>Reset</button>
+        </>
+    )
+}
